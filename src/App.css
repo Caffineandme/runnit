@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.wrapper {
+	background-color: dodgerblue;
+	color: blue;
+	border-style: solid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex-item-1 {
+	border-style: solid;
+	background-color: #f1f1f1;
+	padding: 200px;
+	margin-bottom: 10px;
+	flex: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-item-2 {
+	background-color: dodgerblue;
+	padding: 200px;
+	flex: 50%;
+	margin-bottom: 10px;
+	border-style: solid;
+}
+.flex-item-3 {
+	border-style: solid;
+	background-color: #f1f1f1;
+	padding: 200px;
+	margin-bottom: 10px;
+	flex: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-item-4 {
+	background-color: dodgerblue;
+	padding: 200px;
+	flex: 50%;
+	margin-bottom: 10px;
+	border-style: solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+	.flex-item-right,
+	.flex-item-left {
+		flex: 100%;
+		width: 30%;
+		max-width: 20 px;
+	}
 }
